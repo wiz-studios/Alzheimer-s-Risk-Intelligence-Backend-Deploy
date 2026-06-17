@@ -4,7 +4,7 @@ This backend exposes the v5 machine-learning assets to the native Android app.
 
 It keeps the same practical system assets:
 
-- `data/raw/data1.csv`, `data2.csv`, `data3.csv`
+- `data/raw/data1.csv`, `data2.csv`, `data3.csv`, `data4.csv`
 - trained sklearn/joblib pipelines in `models/`
 - generated metrics and metadata in `results/`
 - prediction, uncertainty, feature importance, and SHAP support through `src/`
@@ -38,6 +38,7 @@ http://192.168.1.20:8510/api
 - `GET /api/health`
 - `GET /api/datasets`
 - `GET /api/models?dataset=data1.csv&mode=overall`
+- `GET /api/warmup?dataset=data1.csv&model=xgboost`
 - `GET /api/sample?dataset=data1.csv`
 - `GET /api/metrics?dataset=data1.csv`
 - `GET /api/metadata?dataset=data1.csv`

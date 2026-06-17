@@ -34,6 +34,12 @@ DATASET_CONFIG = {
         "source": "UCI Machine Learning Repository",
         "prediction_context": "Handwriting-feature Alzheimer classification",
     },
+    "data4.csv": {
+        "target": "target",
+        "label": "CDC Healthy Aging Cognitive Decline Indicators",
+        "source": "CDC Healthy Aging Data Portal",
+        "prediction_context": "Population-level cognitive-decline burden classification from public-health indicators",
+    },
 }
 
 MODEL_INFO = {

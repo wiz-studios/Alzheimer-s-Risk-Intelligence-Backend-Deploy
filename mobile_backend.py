@@ -111,7 +111,7 @@ def validate_input(input_data, feature_template):
         if pd.api.types.is_numeric_dtype(dtype):
             row[column] = pd.to_numeric(row[column], errors="raise")
         else:
-            row[column] = row[column].astype("string")
+            row[column] = row[column].astype(object).where(row[column].notna(), None)
 
     if "Age" in row.columns:
         age = float(row["Age"].iloc[0])
