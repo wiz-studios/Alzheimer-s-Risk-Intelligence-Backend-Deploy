@@ -40,6 +40,12 @@ DATASET_CONFIG = {
         "source": "CDC Healthy Aging Data Portal",
         "prediction_context": "Population-level cognitive-decline burden classification from public-health indicators",
     },
+    "data5.csv": {
+        "target": "target",
+        "label": "CDC Healthy Aging Mental Health Indicators",
+        "source": "CDC Healthy Aging Data Portal",
+        "prediction_context": "Population-level mental-health burden classification from public-health indicators",
+    },
 }
 
 MODEL_INFO = {

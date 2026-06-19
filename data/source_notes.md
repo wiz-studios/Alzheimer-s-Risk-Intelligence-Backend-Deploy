@@ -1,7 +1,7 @@
 # Real Dataset Notes
 
 These CSVs are prepared from public datasets for Part B practical development.
-Version 5 originally satisfied the 10,000-row requirement with three datasets. The current feedback update adds a fourth CDC Healthy Aging dataset for stronger multi-source analysis.
+The backend loads every prepared CSV in `data/raw`, so additional datasets can be added without changing the API.
 
 | File | Source | Rows | Target definition | Limitation |
 | --- | --- | ---: | --- | --- |
@@ -9,6 +9,7 @@ Version 5 originally satisfied the 10,000-row requirement with three datasets. T
 | data2.csv | OASIS-1 cross-sectional demographic and clinical data | 235 | `CDR > 0` | Small subject-level MRI/clinical cohort; predicts dementia classification, not medical diagnosis. |
 | data3.csv | UCI DARWIN handwriting Alzheimer dataset | 174 | `P = Alzheimer patient`, `H = healthy control` | Small subject-level handwriting dataset; high-dimensional features. |
 | data4.csv | CDC Healthy Aging cognitive-decline indicators | 4500 | `Data_Value >= median cognitive-decline indicator value` | Population-level public-health indicator classification, not individual patient diagnosis. |
+| data5.csv | CDC Healthy Aging mental-health indicators | 4000 | `Data_Value >= median mental-health indicator value` | Population-level public-health indicator classification, not individual patient diagnosis. |
 
-Prepared total rows: 14500.
+Prepared total rows: 18500.
 Do not describe these outputs as clinical diagnosis. The system should be described as an academic risk/classification prototype.
